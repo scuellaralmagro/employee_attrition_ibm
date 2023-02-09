@@ -42,7 +42,9 @@ def encode_yes_no(column):
 
 def main():
     # Load IBM HR Analytics Employee Attrition & Performance dataset from data.csv
-    df = load_csv('data.csv')   
+    print('Loading data.csv...')
+    df = load_csv('data.csv')
+    print('Commencing Data Preprocessing...')
 
     # Drop columns that are not needed for the analysis
     df = columns_drop(df, ['EmployeeCount', 'EmployeeNumber', 'Over18', 'StandardHours'])
@@ -66,8 +68,9 @@ def main():
     # Encode target column
     df['Attrition'] = df['Attrition'].apply(encode_yes_no)
     
+    print('Final Result:')
     print(df.info())
-    print('Successfully preprocessed data.')
+    print('Data Preprocessing Completed')
 
     # Save preprocessed data to csv file
     df.to_csv('data_preprocessed.csv', index=False)
