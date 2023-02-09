@@ -16,10 +16,6 @@ def categorical_columns(df):
     '''Returns a list of columns that are categorical'''
     return df.select_dtypes(include=['object']).columns.tolist()
 
-def numerical_columns(df):
-    '''Returns a list of columns that are numerical'''
-    return df.select_dtypes(include=['int64', 'float64']).columns.tolist()
-
 def one_hot_encode(df, columns):
     '''One-hot encodes a list of columns'''
     return pd.get_dummies(df, columns=columns)
