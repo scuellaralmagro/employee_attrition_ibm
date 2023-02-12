@@ -56,7 +56,7 @@ def main():
     # Remove columns in cat_columns_two_unique from cat_columns
     cat_columns = [col for col in cat_columns if col not in cat_columns_two_unique]
     
-    # Encode categorical columns with only two unique values ['Gender', 'OverTime'].
+    # Encode categorical columns with only two unique values ['Gender', 'OverTime']
     df['Gender'] = df['Gender'].apply(encode_gender)
     df['OverTime'] = df['OverTime'].apply(encode_yes_no)
     # One-hot encode categorical columns
