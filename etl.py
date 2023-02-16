@@ -1,6 +1,9 @@
-import pandas as pd
-
+# IBM HR Analytics Employee Attrition & Performance ETL Script
 # Description: This script preprocesses the IBM HR Analytics Employee Attrition & Performance dataset and saves it to a csv file.
+# Author: @scuellaralmagro
+# Date: February 2023
+
+import pandas as pd
 
 ## Helper functions
 
