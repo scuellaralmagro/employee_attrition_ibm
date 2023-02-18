@@ -1,4 +1,4 @@
+.gitignore
 data_processed.csv
 logreg_cv.pkl
 scaler.pkl
-.gitignore
