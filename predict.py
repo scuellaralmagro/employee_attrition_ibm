@@ -6,7 +6,6 @@
 import pandas as pd
 import joblib
 import random
-from sklearn.preprocessing import StandardScaler
 
 ## Helper functions
 
