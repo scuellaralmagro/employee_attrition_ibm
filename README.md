@@ -1,4 +1,4 @@
-# IBM Employee Attrition Analysis and Machine Learning Predictor
+# Case Study: IBM HR Analytics Employee Attrition & Performance
 
 ## **Introduction**
 
