@@ -33,6 +33,8 @@ The file structure for this project is as follows:
 
 ## **Requirements**
 
+- **Python Version:** 3.11.2
+
 The following Python packages are required to run the code in this project:
 - **Pandas** (version 1.5.2)
 - **Numpy** (version 1.23.5)
